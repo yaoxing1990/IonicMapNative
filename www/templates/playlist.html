@@ -1,0 +1,10 @@
+<ion-view view-title="Playlist">
+  <ion-content>
+    <h1>Playlist</h1>
+    {{longitude}}, {{latitude}}
+    <div map-lazy-load="https://maps.google.com/maps/api/js"
+    map-lazy-load-params="{{googleMapsUrl}}">
+    <ng-map center="{{longitude}}, {{latitude}}" zoom="10"></ng-map>
+  </div>
+  </ion-content>
+</ion-view>
